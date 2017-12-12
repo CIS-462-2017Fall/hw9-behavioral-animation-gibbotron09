@@ -80,10 +80,16 @@ void BehaviorViewer::initializeGui()
 	TwAddVarRW(m_TwBehaviorBar, "Max angular", TW_TYPE_DOUBLE, &BehaviorController::gMaxAngularSpeed, "");
 	TwAddVarRW(m_TwBehaviorBar, "Neighborhod", TW_TYPE_DOUBLE, &BehaviorController::gKNeighborhood, "");
 	TwAddVarRW(m_TwBehaviorBar, "Radius", TW_TYPE_DOUBLE, &BehaviorController::gAgentRadius, "");
+	TwAddVarRW(m_TwBehaviorBar, "Inertia", TW_TYPE_DOUBLE, &BehaviorController::gInertia, "");
+	TwAddVarRW(m_TwBehaviorBar, "Mass", TW_TYPE_DOUBLE, &BehaviorController::gMass, "");
+	TwAddVarRW(m_TwBehaviorBar, "Max Torque", TW_TYPE_DOUBLE, &BehaviorController::gMaxTorque, "");
+	TwAddVarRW(m_TwBehaviorBar, "Max Force", TW_TYPE_DOUBLE, &BehaviorController::gMaxForce, "");
 	TwAddVarRW(m_TwBehaviorBar, "Debug", TW_TYPE_BOOLCPP, &m_DebugDraw, "");
 	TwAddButton(m_TwBehaviorBar, "Reset", onResetCb, this, "");
 
 	//TODO: Add your code here to create additional GUI Variables
+	//Added above for organizations sake
+
 }
 
 
